@@ -58,3 +58,9 @@ pre {
 li {
   margin-bottom: 5px;
 }
+
+@media (max-width: 800px) { 
+  .body__text {
+    font-size: 1.2rem;
+  }
+}

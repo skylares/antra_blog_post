@@ -24,8 +24,19 @@
 }
 
 .sidebar__link {
-
   padding: 3px 0 3px 15px;
+}
+
+@media (max-width: 800px) { 
+  
+  .sidebar {
+    display: contents;
+  }
+
+  .about {
+    margin-top: 20px;
+  }
+  
 }
 
 

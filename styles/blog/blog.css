@@ -6,3 +6,15 @@
   grid-row-gap: 0px;
   padding: 0 8vw 10px 11vw;
 }
+
+@media (max-width: 800px) {
+  .blog-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    margin: 0 10px 0 10px;
+    max-width: 95vw;
+    max-height: 1500px;
+  }
+}

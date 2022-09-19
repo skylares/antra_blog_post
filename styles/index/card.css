@@ -40,3 +40,14 @@
 .card__preview-text {
   margin-bottom: 50px;
 }
+
+@media (max-width: 800px) {
+  .index-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin: 0 10vw;
+  }
+}
