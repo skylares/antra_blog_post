@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  background-color: rgba(211, 211, 211, 0.17);
+  padding: 15px;
+}
+
+.about__title {
+  font-size: 1.5rem;
+}
+
+.about__text {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar__archives, .sidebar__elsewhere {
+  font-size: 1.5rem;
+  padding: 25px 0 10px 15px;
+}
+
+.sidebar__link {
+
+  padding: 3px 0 3px 15px;
+}
+
+

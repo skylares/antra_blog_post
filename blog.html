@@ -18,7 +18,7 @@
   <main class="blog-main">
     <div class="body">
       <h2 class="body__title">Async vs Fetch</h2>
-      <p class="body__date">August 25th, 2022 by Skylar Kesselring</p>
+      <p class="body__date">August 25th, 2022 by Skylar</p>
       <p class="body__text body__text--section-one">When consuming API's in Javascript you have a plethora of options to parse your data. Today I'll be comparing two of the most popular methods, Async/Await and Fetch.</p>
       <hr>
       <p class="body__text body__text--section-two">Lorem ipsum dolor sit amet consectetur <a href="blog.html">adipisicing elit.</a> Similique iure ab, rerum numquam vitae nobis animi sequi libero ullam officiis perferendis quod ducimus blanditiis asperiores quasi eligendi, aut soluta qui? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptatum doloremque? Ipsum eum esse, aut hic repellendus nostrum beatae nisi. Corporis sit repellat quas consequatur in, quo dicta at. Dignissimos!</p>
@@ -28,9 +28,18 @@
       <h3 class="body__heading">Why use Async?</h3>
       <p class="body__text body__text--heading-one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quos enim eligendi repudiandae quisquam tempora facere architecto provident esse! Voluptates consequuntur aliquid natus, magnam optio vero deserunt soluta beatae doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis placeat, non similique omnis sequi earum quod perspiciatis laborum amet, accusamus dolorum impedit vero veritatis reprehenderit veniam quisquam voluptatibus iure!</p>
 
-      <h4 class="body__subheading body__subheading-one">Async mimics sychronous code</h4>
+      <h4 class="body__subheading body__subheading-one">Async <i>mimics</i> sychronous code</h4>
       <p class="body__text body__text--subheading-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque necessitatibus, enim nihil officia provident</p>
-      <code class="body__code-block">const result = await body.json();</code>
+      <code class="body__code"><pre>
+
+        async function apiCaller() {
+          const data = await fetch('https://catfact.ninja/fact');
+          const result = await data.json();
+          return result;
+        }
+
+        apiCaller().then(res => console.log(res.fact));
+      </pre></code>
       <p class="body__text body__text--subheading-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ut, nemo harum libero odit qui suscipit nam? Velit doloremque optio unde consequatur, molestias labore similique explicabo ea aspernatur maiores incidunt.</p>
 
       <h4 class="body__subheading body__subheading-two">Downsides of Async</h4>
@@ -48,8 +57,8 @@
       </ol>
       <p class="body__text body__text--subheading-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure numquam nemo iste laudantium dolores recusandae.</p>
       
-      <a href="/blog.html">Older Post</a>
-      <a href="/blog.html">Newer Post</a>
+      <a class="body__btn body__btn--older" href="/blog.html">Older Post</a>
+      <a class="body__btn body__btn--newer" href="/blog.html">Newer Post</a>
     </div>
 
     <div class="sidebar">
@@ -58,7 +67,7 @@
         <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci, autem fugit aliquam quo omnis nobis ullam doloribus corrupti rem hic dolorem provident aut nostrum praesentium cupiditate? Laborum, recusandae quaerat.</p>
       </div>
 
-      <h5 class="sidebar__archives"></h5>
+      <h5 class="sidebar__archives">Archives</h5>
       <a class="sidebar__link" href="blog.html">March 2014</a>
       <a class="sidebar__link" href="blog.html">June 2014</a>
       <a class="sidebar__link" href="blog.html">August 2014</a>
@@ -79,6 +88,13 @@
     </div>
 
   </main>
+
+  <footer class="footer">
+    <p class="footer__credits">Blog created and populated by Skylar Kesselring &copy;2022 </p>
+    <a class="footer__link footer__twitter" href="https://www.twitter.com">Twitter</a>
+    <a class="footer__link footer__github" href="https://www.github.com/skylares">Github</a>
+    <a class="footer__link footer__facebook" href="https://www.facebook.com">Facebook</a>
+  </footer>
     
 </body>
 </html>
