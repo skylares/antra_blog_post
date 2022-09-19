@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 30px;
+  background-color: rgba(127, 255, 212, 0.454);
+  height: 8vh;
+}
+
+.footer__credits {
+  padding: 15px 10px;
+}
+
+.footer__link {
+  padding-left: 10px;
+}

@@ -4,6 +4,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 30px;
+  margin: 0 10vw;
 }
 
 .card {
