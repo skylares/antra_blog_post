@@ -1,0 +1,39 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+.card {
+  border: 7px solid rgba(128, 128, 128, 0.201);
+  padding: 15px 40px 15px 15px;
+}
+
+.card__title {
+  font-size: 1.75rem;
+}
+
+.card__subject {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.card__subject--purple {
+  color: blueviolet;
+}
+
+.card__subject--green {
+  color: green;
+}
+
+.card__date {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: rgb(108, 108, 108);
+}
+
+.card__preview-text {
+  margin-bottom: 50px;
+}

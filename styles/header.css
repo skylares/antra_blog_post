@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__subscribe {
+  color: rgba(255, 13, 0, 0.693);
 }
 
 .header__title {
