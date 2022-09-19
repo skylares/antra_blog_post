@@ -1,7 +1,9 @@
-@import 'header.css';
-@import 'card.css';
-@import 'footer.css';
-@import 'blogPost.css'; 
+@import 'index/header.css';
+@import 'index/card.css';
+@import 'index/footer.css';
+@import 'blog/blog.css';
+@import 'blog/body.css';
+@import 'blog/sidebar.css';
 
 * {
     box-sizing: border-box;
