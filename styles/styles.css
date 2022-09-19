@@ -1,0 +1,12 @@
+@import 'card.css';
+@import 'header.css';
+@import 'blogPost.css'; 
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, p, button, a, div {
+    margin: 0;
+    padding: 0;
+}
