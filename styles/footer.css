@@ -1,13 +1,21 @@
 .footer {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
   background-color: rgba(127, 255, 212, 0.454);
   height: 8vh;
 }
 
 .footer__credits {
-  padding: 15px 10px;
+  padding-left: 20px;
+  margin-right: auto;
 }
 
 .footer__link {
-  padding-left: 10px;
+  margin-left: 20px;
+  color: black;
+}
+
+.footer__facebook {
+  padding-right: 20px
 }

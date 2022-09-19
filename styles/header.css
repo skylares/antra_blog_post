@@ -6,11 +6,12 @@
 }
 
 .header__subscribe {
-  color: rgba(255, 13, 0, 0.693);
+  color: grey;
 }
 
 .header__title {
   color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: underline;
   margin-top: -10px;
 }
